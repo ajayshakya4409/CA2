@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 style="margin-left:550px;">Registration Form</h1>
+        <style>
+            body{
+                background-size: cover;
+            }
+            h2{
+                color:rgb(218, 6, 6);
+                font-size: 40px;
+                text-align: center;
+            }
+            h1{
+                color:deeppink;
+                margin-top: 5px;
+            }
+            .table{
+                width: 350px;
+                height: 350px;
+                margin-left: 500px;
+                background-color: black;
+                opacity: .5;
+                color: white;
+                margin-top: 0px;
+            }
+
+            tr{
+            height: 20px;
+
+            }
+            td{
+                text-align: center;
+                font-size: 20px;
+            }
+            input{
+                height: 25px;
+                width: 200px;
+
+            }
+            a input:hover{
+                background-color: red;
+            }
+            a input[type='submit']{
+                width: 150px;
+                height: 40px;
+            border-radius: 20px;
+
+            }
+            .uptable{
+                 width: 350px;
+                height: 50px;
+                margin-left: 500px;
+                background-color: black;
+                border-radius: 10px 10px 0px 0px;
+            }
+            strong{
+                color: red;
+                font-size: 20px;
+                margin-left: 150px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="uptable"></div>
+        <div class="table">
+            <form method="POST" name="registerForm"  action="/">
+                <table>
+                    <tr><td><b>First Name:</b></td><td><input type="text" name="fname" placeholder="Enter First Name"  required/>
+                    </td></tr> <tr></tr>
+                    <tr><td><b>Last Name:</b></td><td><input type="text" name="lname" placeholder="Enter Last Name" required>
+                    </td></tr><tr></tr>
+                    <tr><td><b>Email:</b></td><td><input type="email" name="email" placeholder="Enter Email" required></td></tr></td></tr>
+                    <tr></tr>
+                     <tr><td><b>Password:</b></td><td><input type="password" name="password1" placeholder="Enter Password" required></td></tr><tr></tr>
+                    <tr><td><b> Confirm Password:</b></td><td><input type="password" name="password2" placeholder="Confirm Password" required></td></tr>
+                    <tr><td></td><td><a><input type="submit" name="res_btn" onclick="uservalidat()" value="Register" margin-left="150px"/></a></td></tr>
+
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
